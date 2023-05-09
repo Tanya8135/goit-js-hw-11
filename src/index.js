@@ -15,11 +15,11 @@ const newsApiService = new NewsApiService();
 refs.form.addEventListener('submit', onSearch);
 refs.loadMore.addEventListener('click', onLoadMore);
 
-const options = {
-  rootMargin: '50px',
-  root: null,
-  threshold: 0.3,
-};
+// const options = {
+//   rootMargin: '50px',
+//   root: null,
+//   threshold: 0.3,
+// };
 // const observer = new IntersectionObserver(onLoadMore, options);
 // console.log(observer)
 
