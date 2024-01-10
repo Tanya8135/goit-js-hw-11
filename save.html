@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/html" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/LogoCalm.svg" alt="logo" />
+          </a>
+        </div>
+        <!-- BTN open -->
+        <button
+          type="button"
+          class="burger-menu btn-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- BTN close & Mobile menu (burger menu) -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg viewBox="0 0 32 32" width="32">
+            <use xlink:href="./images/icons.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+
+        <!-- Mobile menu (burger menu) -->
+        <div class="mobile-menu__box">
+          <div class="logo logo-bm">
+            <a href="./index.html">
+              <img src="./images/LogoCalm.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__link">About</li>
+              <li class="mobile-menu__link">Subscription</li>
+              <li class="mobile-menu__link">Archive</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-container">
+          <div>
+            <img src="./images/LogoCalm.svg" alt="logo" class="hero-logo" />
+          </div>
+          <h1 class="hero-title">
+            Welcome to Calm - a lifestyle blog about minimalism, technology,
+            design & travel.
+          </h1>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="about">
+        <div class="about-container">
+          <article class="about-card-img">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="./images/mob_320/mountains@2_280.png 2x"
+                media="(min-width: 320px)"
+              />
+              <img
+                srcset="./images/mob_320/mountains@2_280.png 2x"
+                src="./images/mob_320/mountains_280.png"
+                alt="Mountains"
+              />
+            </picture>
+
+            <p class="type-card">Travel</p>
+            <h2 hidden></h2>
+            <h3 class="card-title">Travel spots in Iceland</h3>
+            <p class="card-description">
+              Delectus sint nisi ut recusandae molestiae. Qui iure accusantium
+              esse temporibus et. Aut atque vel labore officiis a dolor et.
+              Molestiae dolor quo eius. Perferendis error eveniet sit quia
+              occaecati excepturi nisi prod.
+            </p>
+            <p class="date">November 24, 2021</p>
+          </article>
+
+          <article class="article-card">
+            <img
+              srcset="./images/mob_320/climbing@2_243.png 2x"
+              sizes="(max-width: 320px) 243px, 100vw"
+              src="./images/mob_320/climbing_243.png"
+              alt="Climbing"
+            />
+            <div class="card-box">
+              <p class="type-card-p">Exercise</p>
+              <h4 class="card-title-artcl">Climbing as exercise</h4>
+              <p class="date-p">November 24, 2021</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <img
+              srcset="./images/mob_320/cameras@2_243.png 2x"
+              sizes="(max-width: 320px) 243px, 100vw"
+              src="./images/mob_320/cameras_243.png"
+              alt="Camera"
+            />
+            <div class="card-box">
+              <p class="type-card-p">Tech</p>
+              <h4 class="card-title-artcl">The move to mirrorless cameras</h4>
+              <p class="date-p">November 24, 2021</p>
+            </div>
+          </article>
+
+          <article class="about-card-img">
+            <img
+              srcset="./images/mob_320/drone@2_280.png 2x"
+              sizes="(max-width: 320px) 280px, 100vw"
+              src="./images/mob_320/drone_280.png"
+              alt="Drone"
+            />
+            <p class="type-card-p">Tech</p>
+            <h4 class="card-title-artcl">
+              Drone photography on a space budget
+            </h4>
+            <p class="date-p">November 24, 2021</p>
+          </article>
+
+          <article class="about-card-img">
+            <img
+              srcset="./images/mob_320/coffe@2_280.png 2x"
+              sizes="(max-width: 320px) 280px, 100vw"
+              src="./images/mob_320/coffe_280.png"
+              alt="Cofee"
+            />
+            <p class="type-card-p">Tutorial</p>
+            <h4 class="card-title-artcl">
+              How to make the perfect cup of coffee
+            </h4>
+            <p class="date-p">November 24, 2021</p>
+          </article>
+
+          <div class="slider">
+            <article class="article-card-slider">
+              <img
+                srcset="./images/mob_320/pen@2_243.png 2x"
+                sizes="(max-width: 320px) 280px, 100vw"
+                src="./images/mob_320/pen_243.png"
+                alt="Camera"
+              />
+              <div class="card-box">
+                <p class="type-card-p">Review</p>
+                <h4 class="card-title-artcl-sl">The best pen I've ever used</h4>
+                <p class="date-p">November 24, 2021</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUBSCRIPTION -->
+      <section class="subscription">
+        <p class="subtitle-subscr"><b>Stay in the know.</b></p>
+        <p class="text-subscr">
+          Sign-up to my newsletter to get an update whenever I post a new
+          article. I try to be very mindful of not spamming my subscribers.
+        </p>
+        <form class="subscr-form">
+          <label class="data-field">
+            <input
+              type="text"
+              name="name"
+              class="data-input"
+              placeholder="Enter name"
+            />
+            <span class="data-text">Name</span>
+          </label>
+
+          <label class="data-field">
+            <input
+              type="email"
+              name="email"
+              class="data-input"
+              placeholder="Enter mail"
+            />
+            <span class="data-text">Email Address</span>
+          </label>
+        </form>
+        <button class="btn-subscr" type="button">Send</button>
+      </section>
+
+      <!-- ARCHIVE -->
+      <section class="archive">
+        <div class="archive-container">
+          <ul>
+            <li>
+              <article class="archive-card-img">
+                <img
+                  srcset="./images/mob_320/mountains@2_280.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/mob_320/mountains_280.png"
+                  alt="Mountains"
+                  class="archive-img"
+                />
+                <h2 hidden></h2>
+                <h3 class="archive-title">Travel spots in Iceland</h3>
+                <p class="card-description">
+                  Delectus sint nisi ut recusandae molestiae. Qui iure
+                  accusantium esse temporibus et. Aut atque vel labore officiis
+                  a dolor et. Molestiae dolor quo eius. Perferendis error
+                  eveniet sit quia occaecati excepturi nisi prod.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img">
+                <img
+                  srcset="./images/mob_320/climbing@2_280.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/mob_320/climbing_280.png"
+                  alt="Mountains"
+                  class="archive-img"
+                />
+                <h2 hidden></h2>
+                <h3 class="archive-title">Climbing as exerc ise</h3>
+                <p class="card-description">
+                  Consequuntur voluptas quis dicta expedita in minus velit
+                  impedit deserunt. Quasi sit similique nemo praesentium
+                  excepturi commodi suscipit placeat. Incidunt libero
+                  necessitatibus. Commodi modi placeat. Sit et delenit.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+          </ul>
+          <ul class="archive-list">
+            <!-- те, що перенесеться до JSІ -->
+            <!-- <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  Meditation apps I use
+                </h3>
+                <p class="card-description">
+                  Sit quis quaerat expedita aut sed error facilis odit
+                  similique. Saepe culpa aut fuga aut esse quaerat. Vero vero
+                  facere perferendis.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg--last">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  How much stuff do you actually need?
+                </h3>
+                <p class="card-description">
+                  Veritatis perspiciatis est dolores adipisci ut sed. Culpa
+                  eligendi sunt cupiditate aut est. Recusandae pariatur qui quo
+                  animi exercitationem sint voluptas tenetur ut.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <img
+                  srcset="./images/mob_320/camera@2_280.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/mob_320/camera_280.png"
+                  alt="Camera"
+                />
+                <h2 hidden></h2>
+                <h3 class="archive-title">The move to mirrorless cameras</h3>
+                <p class="card-description">
+                  Maxime quisquam non in et iusto voluptates. Minima et deleniti
+                  laboriosam. Qui deleniti quas ex expedita hic facere commodi
+                  esse veniam.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <img
+                  srcset="./images/mob_320/drone@2_280.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/mob_320/drone_280.png"
+                  alt="Drone"
+                />
+                <h2 hidden></h2>
+                <h3 class="archive-title">
+                  Drone photography on a space budget
+                </h3>
+                <p class="card-description">
+                  Aut quia voluptatem rem assumenda dolorem eos nostrum.
+                  Voluptatem facere ipsum aut maxime ab. Ea et voluptatum
+                  maiores odit voluptatib.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg--last">
+                <img
+                  srcset="./images/mob_320/coffe@2_280.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/mob_320/coffe_280.png"
+                  alt="Coffe"
+                />
+                <h2 hidden></h2>
+                <h3 class="archive-title">
+                  How to make the perfect cup of coffee
+                </h3>
+                <p class="card-description">
+                  Aut nihil suscipit voluptas libero deleniti similique maxime.
+                  Ea rerum illo assumenda delectus ipsum dolores nam.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  Decision fatigue & minimalism
+                </h3>
+                <p class="card-description">
+                  Accusamus nihil qui iste consequatur iste labore maiores nobis
+                  natus. Maiores harum accusantium. Hic sunt aut vel et hic. Et
+                  quas necessitatibus. Iusto est sit. Rerum id ut. Id dolore
+                  voluptatem eum perferendis vitae.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg--last">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  Minimal interior design
+                </h3>
+                <p class="card-description">
+                  Aliquam quae nemo amet quia quae perferendis earum. Labore
+                  molestiae quis doloremque. At perferendis pariatur minima
+                  rerum delectus. Hic cum eum voluptas.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg--last">
+                <img
+                  srcset="./images/mob_320/pen@2_280.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/mob_320/pen_280.png"
+                  alt="Pen"
+                />
+                <h2 hidden></h2>
+                <h3 class="archive-title">The best pen I've ever used</h3>
+                <p class="card-description">
+                  Mollitia voluptatum cum consequatur possimus ut veritatis quod
+                  non sint. Voluptatibus fuga ut magnam culpa quasi. Odio
+                  commodi modi vero dolore. Esse aut et distinctio. Voluptatem
+                  corrupti quasi. Ut omnis reprehenderi.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  Best travel tripods
+                </h3>
+                <p class="card-description">
+                  Sequi asperiores culpa nihil. Qui placeat ut eos molestiae
+                  arc.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  EDC must-haves
+                </h3>
+                <p class="card-description">
+                  Nisi ad perferendis quia modi a. Magni ut aut voluptatum.
+                  Dolorem vero molestiae itaque. Qui itaque itaque. Nihil autem
+                  perspiciatis sed similique dolor excepturi harum. Perspiciatis
+                  suscipit unde aliq.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  Journals & how to use them
+                </h3>
+                <p class="card-description">
+                  Assumenda aut eos et consequatur sint vitae fugit. Nulla
+                  voluptatibus et voluptatum sed.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  Minimalism in the workplace?
+                </h3>
+                <p class="card-description">
+                  Nostrum quia sapiente natus consequatur. Dicta debitis aut
+                  minus consectetur est officiis aut. Atque itaque quia
+                  asperiores odit in tempore nisi qui. Sit ut aut ipsa.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img archive-card-img__noImg">
+                <h2 hidden></h2>
+                <h3 class="archive-title archive-title__noImg">
+                  How I structure my work
+                </h3>
+                <p class="card-description">
+                  Inventore alias consequatur accusantium ut explicabo aut. Et
+                  fuga voluptatem est reiciendis officia qui qui. Dolorem est
+                  sequi numquam ratione cum sequi porro. Sint debitis delectus
+                  nihil placeat dolor non laborum iusto.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li>
+            <li>
+              <article class="archive-card-img">
+                <img
+                  srcset="./images/mob_320/traver@2_280.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/mob_320/traver_280.png"
+                  alt="Travel"
+                />
+                <h2 hidden></h2>
+                <h3 class="archive-title">Tech-focused travel backpack</h3>
+                <p class="card-description">
+                  Delectus et iusto perspiciatis impedit dolor eligendi sit.
+                  Voluptatem excepturi temporibus fugit molestiae. Nesciunt
+                  sequi molestiae. Molestiae recusandae sed esse illo nobis. Qui
+                  aut porro id. Tempore sed.
+                </p>
+                <p class="date-a">November 24, 2021</p>
+              </article>
+            </li> -->
+          </ul>
+
+          <!-- BUTTON -->
+          <div class="btn-box-archive">
+            <button type="button" class="archive-btn load-more is-hidden">
+              View archive
+              <div class="arrow-btn">
+                <svg width="30" height="30">
+                  <use href="./images/icons.svg#icon-arrow-btn"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/LogoCalm.svg" alt="logo" />
+          </a>
+        </div>
+        <p class="footer-text">
+          A lifestyle blog about minimalism, technology, design & travel.
+          Powered by
+        </p>
+        <div class="nav-footer">
+          <ul class="nav-footer-list">
+            <li class="nav-footer-item">Start</li>
+            <li class="nav-footer-item">Archive</li>
+          </ul>
+
+          <ul class="info-footer-list">
+            <li class="info-footer-item">Instructions</li>
+            <li class="info-footer-item">Licenses</li>
+            <li class="info-footer-item">Style guide</li>
+            <li class="info-footer-item">Changelog</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- <div id="app"></div> -->
+    <script type="text/html" src="./main.js"></script>
+  </body>
+</html>
